@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import CookieBanner from './components/CookieBanner';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Lazy load components for better performance
@@ -69,6 +70,7 @@ function App() {
         <Suspense fallback={<LoadingSpinner />}>
           <Footer />
         </Suspense>
+        <CookieBanner />
       </div>
     </Router>
   );
